@@ -1,0 +1,23 @@
+function zeroesToEnd(arr){
+    let zeroes = 0;
+    for(let i = 0; i < arr.length - zeroes; i++){
+        if(arr[i] == 0){
+            arr.splice(i,1);
+            arr.push(0);
+            zeroes++;
+            i--;
+        }
+    }
+}
+
+
+function shiftToRight(oper, num) {
+  return Math.floor(oper/Math.pow(2,num)); 
+}
+
+console.log(shiftToRight(80, 3));
+console.log(shiftToRight(-24, 2));
+console.log(shiftToRight(-5, 1));
+console.log(shiftToRight(4666, 6));
+console.log(shiftToRight(3777, 6));
+console.log(shiftToRight(-512, 10));
