@@ -9,7 +9,21 @@ function zeroesToEnd(arr){
         }
     }
 }
+const arr1 = [1, 2, 0, 0, 4, 0, 5];
+zeroesToEnd(arr1);
+console.log(`zeroesToEnd([1, 2, 0, 0, 4, 0, 5]) => ${arr1}`)
 
+const arr2 = [0, 0, 2, 0, 5];
+zeroesToEnd(arr2);
+console.log(`zeroesToEnd([0, 0, 2, 0, 5]) => ${arr2}`)
+
+const arr3 = [4, 4, 5];
+zeroesToEnd(arr3);
+console.log(`zeroesToEnd([4, 4, 5]) => ${arr3}`)
+
+const arr4 = [0, 0];
+zeroesToEnd(arr4);
+console.log(`zeroesToEnd([0, 0]) => ${arr4 }`)
 
 function shiftToRight(oper, num) {
   return Math.floor(oper/Math.pow(2,num)); 
